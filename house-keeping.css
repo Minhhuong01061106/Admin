@@ -1,0 +1,51 @@
+.col-tabcontrol > button > span {
+  font-size: 10px;
+}
+.col-tabcontrol > button > i {
+  font-size: 13px;
+  padding-right: 5px;
+}
+.col-tabcontrol {
+  background-color: rgb(239, 240, 240);
+}
+.offcanvas {
+  background-color: rgb(239, 240, 240);
+}
+.div-main > #div-alert {
+  background-color: rgb(249, 238, 238);
+}
+.text-tab > div > button > h6 {
+  color: rgb(253, 122, 75);
+}
+.table-main > * {
+  font-size: 15px;
+}
+
+.text-tab-mobile > div > button > * {
+  font-size: 10px;
+}
+.div-schedule-mobile > div > button {
+  font-size: 10px;
+}
+.btn-active {
+  background-color: rgb(204, 204, 205);
+}
+.div-aleart > * {
+  font-size: 12px;
+}
+.btn-details > p {
+  font-size: 12px;
+}
+.btn-details {
+  width: 130px;
+}
+.body-table > * {
+  font-size: 13px;
+}
+
+.body-table > tr > td {
+  max-width: 200px;
+}
+.table > thead > tr > th {
+  font-size: 13px;
+}
