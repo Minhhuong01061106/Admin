@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b9112cd231.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="row m-0">
+      <div
+        class="col-tabcontrol d-none d-lg-block col-0 col-lg-2 pt-3 pe-1 ps-1"
+      >
+        <h5 class="w-100 text-center mt-3 mb-3">
+          <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
+          <span class="fs-3">Hotel System</span>
+        </h5>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-house-door-fill fs-5 me-2"></i
+          ><span class="fs-6">Home</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
+          <span class="fs-6">Bookings</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-calendar fs-5 me-2"></i
+          ><span class="fs-6">Calendar</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-hospital fs-5 me-2"></i
+          ><span class="fs-6">Rooms</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-person-fill fs-5 me-2"></i
+          ><span class="fs-6">Guests</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-droplet fs-5 me-2"></i
+          ><span class="fs-6">House keeping</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-people fs-5 me-2"></i><span class="fs-6">Staff</span>
+        </button>
+        <hr class="m-0 mb-2" />
+        <button class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4">
+          <i class="bi bi-gear fs-5 me-2"></i><span class="fs-6">Settings</span>
+        </button>
+      </div>
+      <div class="col-main col-12 col-lg-10 m-0 p-0">
+        <nav class="navbar navbar-expand-lg p-1">
+          <div class="d-flex">
+            <button
+              class="btn d-block d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#tabCanvas"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <button class="btn rounded-c d-block d-lg-none">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <div class="input-group d-none d-lg-flex w-50">
+            <span
+              class="input-group-text rounded-start-pill d-none d-lg-block"
+              style="font-size: 10px"
+              ><i class="bi bi-search"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control rounded-end-pill d-none d-lg-block"
+              style="font-size: 10px"
+              placeholder="Tìm kiếm..."
+            />
+          </div>
+
+          <div class="d-flex ms-auto">
+            <button class="btn rounded-c">
+              <i class="bi bi-bell"></i>
+            </button>
+            <button class="btn rounded-c">
+              <i class="bi bi-inbox"></i>
+            </button>
+            <button class="btn rounded-c d-flex">
+              <i class="bi bi-person"></i>
+              <p class="m-0 ps-2 d-none d-lg-block" style="font-size: 15px">
+                John Doe
+              </p>
+              <i class="bi bi-chevron-down ps-2 d-none d-lg-block"></i>
+            </button>
+          </div>
+        </nav>
+        <hr class="m-0" />
+        <div class="div-feedback p-1 text-center bg-danger d-block d-lg-none">
+          <p class="m-0" style="font-size: 10px">
+            Hey. Your feedback means the world to us.
+            <a href="">Share your opinion</a>
+          </p>
+        </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="tabCanvas">
+          <div class="offcanvas-header">
+            <h5 class="w-100 text-center mt-3 mb-3">
+              <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
+              <span class="fs-3">Hotel System</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-house-door-fill fs-5 me-2"></i
+              ><span class="fs-6">Home</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
+              <span class="fs-6">Bookings</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-calendar fs-5 me-2"></i
+              ><span class="fs-6">Calendar</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-hospital fs-5 me-2"></i
+              ><span class="fs-6">Rooms</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-person-fill fs-5 me-2"></i
+              ><span class="fs-6">Guests</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-droplet fs-5 me-2"></i
+              ><span class="fs-6">House keeping</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-people fs-5 me-2"></i
+              ><span class="fs-6">Staff</span>
+            </button>
+            <hr class="m-0 mb-2" />
+            <button
+              class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4"
+            >
+              <i class="bi bi-gear fs-5 me-2"></i
+              ><span class="fs-6">Settings</span>
+            </button>
+          </div>
+        </div>
+        <div class="div-rooms ps-2 pe-2 pt-2">
+          <h3>Rooms</h3>
+          <div class="div-aleart d-flex p-2 rounded-4 mb-3" id="div-alert">
+            <i class="bi bi-exclamation-circle text-danger p-0 ps-1 pe-1"></i>
+            <div>
+              <div class="p-0 text-danger">Room alert</div>
+              <div class="d-flex">
+                <p class="m-0 p-0">
+                  You have 30 rooms that require urgent house keeping!
+                </p>
+                <button
+                  class="btn btn-details rounded-pill ms-2 p-0 fs-6 bg-white"
+                >
+                  <p class="m-0">View details</p>
+                </button>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              onclick="document.getElementById('div-alert').classList.add('d-none')"
+            ></button>
+          </div>
+          <div
+            class="div-addrooms-mobile d-flex ms-auto d-block d-lg-none w-100"
+          >
+            <div>
+              <button class="btn rounded-pill bg-warning text-white p-1">
+                <p class="m-0">
+                  <a
+                    href="addrooms.html"
+                    class="text-white text-decoration-none"
+                    >+ Add a new rooms</a
+                  >
+                </p>
+              </button>
+            </div>
+            <div class="d-flex ms-auto">
+              <button class="btn rounded-pill border-black p-1">
+                <p class="m-0">
+                  <i class="bi bi-search"></i> <span>Search</span>
+                </p>
+              </button>
+              <button class="btn rounded-pill border-black ms-2 p-1">
+                <p class="m-0">
+                  <i class="bi bi-funnel-fill"></i> <span>Filter</span>
+                </p>
+              </button>
+            </div>
+          </div>
+          <hr class="d-block d-lg-none m-0 mt-3 mb-2" />
+          <div class="text-tab-mobile d-flex w-100">
+            <div class="d-block d-lg-none">
+              <button
+                class="text-center p-1 m-0 border-0 rounded-pill btn-active"
+              >
+                <h6 class="m-0">All Rooms (496)</h6>
+              </button>
+            </div>
+            <div class="d-block d-lg-none">
+              <button
+                class="text-center p-1 m-0 me-2 ms-2 border-0 bg-white rounded-pill"
+              >
+                <h6 class="m-0">Available Rooms (293)</h6>
+              </button>
+            </div>
+            <div class="d-block d-lg-none">
+              <button
+                class="text-center p-1 m-0 border-0 bg-white rounded-pill"
+              >
+                <h6 class="m-0">Booked Rooms (62)</h6>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex mb-2">
+            <div class="text-tab d-flex">
+              <div class="d-none d-lg-block">
+                <button class="text-center p-2 border-0 bg-white">
+                  <h6>All Rooms (496)</h6>
+                </button>
+                <hr class="m-0" />
+              </div>
+              <div class="d-none d-lg-block">
+                <button class="text-center p-2 border-0 bg-white">
+                  <h6>Available Rooms (293)</h6>
+                </button>
+              </div>
+              <div class="d-none d-lg-block">
+                <button class="text-center p-2 border-0 bg-white">
+                  <h6>Booked Rooms (62)</h6>
+                </button>
+              </div>
+            </div>
+            <div class="d-flex ms-auto d-none d-lg-block">
+              <button class="btn rounded-pill border-black me-2 pt-1 pb-1">
+                <i class="bi bi-funnel-fill"></i> <span>Filter</span>
+              </button>
+              <button class="btn rounded-pill bg-warning text-white pt-1 pb-1">
+                + Add a new rooms
+              </button>
+            </div>
+          </div>
+          <div class="div-cards d-block d-lg-none d-grid gap-3">
+            <div class="card w-100 rounded-4">
+              <img
+                src="./image/SuiteNov2022_0008_1920.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Anhloi"
+              />
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">No:</p>
+                    <p class="m-0">231</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Type:</p>
+                    <p class="m-0">Deluxe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Status:</p>
+                    <p class="m-0">
+                      <span class="badge bg-success">Vacant</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 rounded-4">
+              <img
+                src="./image/SuiteNov2022_0008_1920.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Anhloi"
+              />
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">No:</p>
+                    <p class="m-0">231</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Type:</p>
+                    <p class="m-0">Deluxe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Status:</p>
+                    <p class="m-0">
+                      <span class="badge bg-success">Vacant</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 rounded-4">
+              <img
+                src="./image/SuiteNov2022_0008_1920.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Anhloi"
+              />
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">No:</p>
+                    <p class="m-0">231</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Type:</p>
+                    <p class="m-0">Deluxe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Status:</p>
+                    <p class="m-0">
+                      <span class="badge bg-success">Vacant</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 rounded-4">
+              <img
+                src="./image/SuiteNov2022_0008_1920.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Anhloi"
+              />
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">No:</p>
+                    <p class="m-0">231</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Type:</p>
+                    <p class="m-0">Deluxe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Status:</p>
+                    <p class="m-0">
+                      <span class="badge bg-success">Vacant</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 rounded-4">
+              <img
+                src="./image/SuiteNov2022_0008_1920.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Anhloi"
+              />
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">No:</p>
+                    <p class="m-0">231</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Type:</p>
+                    <p class="m-0">Deluxe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Status:</p>
+                    <p class="m-0">
+                      <span class="badge bg-success">Vacant</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card w-100 rounded-4">
+              <img
+                src="./image/SuiteNov2022_0008_1920.jpg"
+                class="card-img-top rounded-top-4"
+                alt="Anhloi"
+              />
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">No:</p>
+                    <p class="m-0">231</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Type:</p>
+                    <p class="m-0">Deluxe</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body d-flex w-100 p-2">
+                <div class="d-flex w-100">
+                  <div class="d-flex">
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Status:</p>
+                    <p class="m-0">
+                      <span class="badge bg-success">Vacant</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mx-auto d-block d-lg-none">
+              <nav aria-label="Page navigation example ">
+                <ul class="pagination ms-0">
+                  <li class="page-item">
+                    <a class="page-link pt-0 pb-0 rounded-start-pill" href="#"
+                      >Previous</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link pt-0 pb-0" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link pt-0 pb-0" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link pt-0 pb-0" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link pt-0 pb-0 rounded-end-pill" href="#"
+                      >Next</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div
+            class="div-allrooms border border-1 rounded-4 p-0 pt-3 pe-4 ps-4 pb-0 mb-3 d-none d-lg-block"
+          >
+            <div class="d-flex">
+              <h6 class="m-0 d-none d-lg-block">All rooms</h6>
+              <div class="input-group ms-auto" style="width: 400px">
+                <span
+                  class="input-group-text rounded-start-pill d-none d-lg-block"
+                  style="font-size: 10px"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control rounded-end-pill d-none d-lg-block"
+                  style="font-size: 10px"
+                  placeholder="Tìm kiếm..."
+                />
+              </div>
+            </div>
+            <table class="table d-none d-lg-table table-rooms mt-3">
+              <thead>
+                <tr class="table-secondary">
+                  <th scope="col">
+                    <input type="radio" name="room-no" />
+                  </th>
+                  <th scope="col">Room No</th>
+                  <th scope="col">Room Type</th>
+                  <th scope="col">Room Floor</th>
+                  <th scope="col">Bed Type</th>
+                  <th scope="col">Capacity</th>
+                  <th scope="col">Availability</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody class="body-table">
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>231</td>
+                  <td>Deluxe</td>
+                  <td>F-31</td>
+                  <td>Queen Size</td>
+                  <td><i class="bi bi-people-fill"></i> 2</td>
+                  <td><span class="badge bg-danger">Dirty</span></td>
+                  <td>Queen Size, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn">
+                        <i class="bi bi-eye"></i>
+                      </button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>100</td>
+                  <td>Standard</td>
+                  <td>F-02</td>
+                  <td>Presidential</td>
+                  <td><i class="bi bi-people-fill"></i> 2</td>
+                  <td><span class="badge bg-success">Vacant</span></td>
+                  <td>Presidential, Jacuzzi, Shower, Mini-Bar</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>101</td>
+                  <td>Presidential</td>
+                  <td>F-01</td>
+                  <td>Twin Rooms</td>
+                  <td><i class="bi bi-people-fill"></i> 4</td>
+                  <td><span class="badge bg-primary">Occupied</span></td>
+                  <td>Double Bed, Jacuzzi, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>675</td>
+                  <td>Suite</td>
+                  <td>F-02</td>
+                  <td>Twin Rooms</td>
+                  <td><i class="bi bi-people-fill"></i> 4</td>
+                  <td>
+                    <span class="badge bg-warning text-dark">Reserved</span>
+                  </td>
+                  <td>Double Bed, Jacuzzi, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>2</td>
+                  <td>Single</td>
+                  <td>F-04</td>
+                  <td>Single</td>
+                  <td><i class="bi bi-people-fill"></i> 1</td>
+                  <td>
+                    <span class="badge bg-info text-dark">Out of stock</span>
+                  </td>
+                  <td>Single Bed, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>231</td>
+                  <td>Deluxe</td>
+                  <td>F-31</td>
+                  <td>Queen Size</td>
+                  <td><i class="bi bi-people-fill"></i> 2</td>
+                  <td><span class="badge bg-danger">Dirty</span></td>
+                  <td>Queen Size, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>100</td>
+                  <td>Standard</td>
+                  <td>F-02</td>
+                  <td>Presidential</td>
+                  <td><i class="bi bi-people-fill"></i> 2</td>
+                  <td><span class="badge bg-success">Vacant</span></td>
+                  <td>Presidential, Jacuzzi, Shower, Mini-Bar</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>101</td>
+                  <td>Presidential</td>
+                  <td>F-01</td>
+                  <td>Twin Rooms</td>
+                  <td><i class="bi bi-people-fill"></i> 4</td>
+                  <td><span class="badge bg-primary">Occupied</span></td>
+                  <td>Double Bed, Jacuzzi, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>675</td>
+                  <td>Suite</td>
+                  <td>F-02</td>
+                  <td>Twin Rooms</td>
+                  <td><i class="bi bi-people-fill"></i> 4</td>
+                  <td>
+                    <span class="badge bg-warning text-dark">Reserved</span>
+                  </td>
+                  <td>
+                    <p class="overflow-hidden" style="width: 200px">
+                      Double Bed, Jacuzzi, Shower
+                    </p>
+                  </td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>2</td>
+                  <td>Single</td>
+                  <td>F-04</td>
+                  <td>Single</td>
+                  <td><i class="bi bi-people-fill"></i> 1</td>
+                  <td>
+                    <span class="badge bg-info text-dark">Out of stock</span>
+                  </td>
+                  <td>Single Bed, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>2</td>
+                  <td>Single</td>
+                  <td>F-04</td>
+                  <td>Single</td>
+                  <td><i class="bi bi-people-fill"></i> 1</td>
+                  <td>
+                    <span class="badge bg-info text-dark">Out of stock</span>
+                  </td>
+                  <td>Single Bed, Shower</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <button class="btn">
+                        <i class="bi bi-three-dots"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="bottom-table d-flex">
+              <div class="me-auto d-none d-lg-block">1-10/100</div>
+              <div class="d-flex p-0 m-0 mx-auto d-none d-lg-flex">
+                <span>Records per page</span>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle ms-2 p-0 ps-1 pe-1 rounded-pill border border-black"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    10
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <li><a class="dropdown-item" href="#">Mục 1</a></li>
+                    <li><a class="dropdown-item" href="#">Mục 2</a></li>
+                    <li><a class="dropdown-item" href="#">Mục 3</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ms-auto d-none d-lg-block">
+                <nav aria-label="Page navigation example ">
+                  <ul class="pagination ms-0">
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0 rounded-start-pill" href="#"
+                        >Previous</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0 rounded-end-pill" href="#"
+                        >Next</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="mx-auto d-block d-lg-none">
+                <nav aria-label="Page navigation example ">
+                  <ul class="pagination ms-0">
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0 rounded-start-pill" href="#"
+                        >Previous</a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link pt-0 pb-0 rounded-end-pill" href="#"
+                        >Next</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

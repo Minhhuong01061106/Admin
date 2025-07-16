@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add rooms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b9112cd231.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="addrooms.css" />
+  </head>
+  <body>
+    <div class="row m-0">
+      <div
+        class="col-tabcontrol d-none d-lg-block col-0 col-lg-2 pt-3 pe-1 ps-1"
+      >
+        <h5 class="w-100 text-center mt-3 mb-3">
+          <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
+          <span class="fs-3">Hotel System</span>
+        </h5>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-house-door-fill fs-5 me-2"></i
+          ><span class="fs-6">Home</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
+          <span class="fs-6">Bookings</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-calendar fs-5 me-2"></i
+          ><span class="fs-6">Calendar</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-hospital fs-5 me-2"></i
+          ><span class="fs-6">Rooms</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-person-fill fs-5 me-2"></i
+          ><span class="fs-6">Guests</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-droplet fs-5 me-2"></i
+          ><span class="fs-6">House keeping</span>
+        </button>
+        <button
+          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+        >
+          <i class="bi bi-people fs-5 me-2"></i><span class="fs-6">Staff</span>
+        </button>
+        <hr class="m-0 mb-2" />
+        <button class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4">
+          <i class="bi bi-gear fs-5 me-2"></i><span class="fs-6">Settings</span>
+        </button>
+      </div>
+
+      <div class="col-main col-12 col-lg-10 m-0 p-0">
+        <nav class="navbar navbar-expand-lg p-1">
+          <div class="d-flex">
+            <button
+              class="btn d-block d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#tabCanvas"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <button class="btn rounded-c d-block d-lg-none">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <div class="input-group d-none d-lg-flex w-50">
+            <span
+              class="input-group-text rounded-start-pill d-none d-lg-block"
+              style="font-size: 10px"
+              ><i class="bi bi-search"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control rounded-end-pill d-none d-lg-block"
+              style="font-size: 10px"
+              placeholder="Tìm kiếm..."
+            />
+          </div>
+
+          <div class="d-flex ms-auto">
+            <button class="btn rounded-c">
+              <i class="bi bi-bell"></i>
+            </button>
+            <button class="btn rounded-c">
+              <i class="bi bi-inbox"></i>
+            </button>
+            <button class="btn rounded-c d-flex">
+              <i class="bi bi-person"></i>
+              <p class="m-0 ps-2 d-none d-lg-block" style="font-size: 15px">
+                John Doe
+              </p>
+              <i class="bi bi-chevron-down ps-2 d-none d-lg-block"></i>
+            </button>
+          </div>
+        </nav>
+        <hr class="m-0" />
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="tabCanvas">
+          <div class="offcanvas-header">
+            <h5 class="w-100 text-center mt-3 mb-3">
+              <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
+              <span class="fs-3">Hotel System</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-house-door-fill fs-5 me-2"></i
+              ><span class="fs-6">Home</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
+              <span class="fs-6">Bookings</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-calendar fs-5 me-2"></i
+              ><span class="fs-6">Calendar</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-hospital fs-5 me-2"></i
+              ><span class="fs-6">Rooms</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-person-fill fs-5 me-2"></i
+              ><span class="fs-6">Guests</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-droplet fs-5 me-2"></i
+              ><span class="fs-6">House keeping</span>
+            </button>
+            <button
+              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+            >
+              <i class="bi bi-people fs-5 me-2"></i
+              ><span class="fs-6">Staff</span>
+            </button>
+            <hr class="m-0 mb-2" />
+            <button
+              class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4"
+            >
+              <i class="bi bi-gear fs-5 me-2"></i
+              ><span class="fs-6">Settings</span>
+            </button>
+          </div>
+        </div>
+        <div class="p-3 div-addnewroom">
+          <div class="mt-3">
+            <button class="btn btn-out rounded-circle me-1 fs-6 mb-3">
+              <p class="m-0"><i class="bi bi-arrow-left"></i></p>
+            </button>
+            <span class="fw-bold fs-2">Add a new room</span>
+          </div>
+          <div class="p-3 pt-2 border rounded-4">
+            <div class="row p-2">
+              <label for="Room-picture" class="fw-bold fs-5"
+                >Room Picture
+                <i
+                  class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+                ></i
+              ></label>
+            </div>
+            <div class="row">
+              <div class="col col-sm-6 col-lg-3 p-2">
+                <img
+                  src="./image/SuiteNov2022_0008_1920.jpg"
+                  alt="Anhloi"
+                  class="w-100 rounded-4"
+                />
+              </div>
+              <div class="col col-sm-6 col-lg-3 p-2">
+                <img
+                  src="./image/SuiteNov2022_0008_1920.jpg"
+                  alt="Anhloi"
+                  class="w-100 rounded-4"
+                />
+              </div>
+
+              <div
+                class="col-sm-12 col-lg-3 p-2 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="div-addimg border-dashed w-100 text-center rounded-4 bg-light d-flex flex-column justify-content-center align-items-center border-dashed"
+                >
+                  <img
+                    src="./image/addimg.png"
+                    class="img-addimg mt-3"
+                    alt="Anhloi"
+                  />
+                  <p>Add image</p>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row p-2">
+              <label for="Room-details" class="fw-bold fs-5"
+                >Room Details
+                <i
+                  class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+                ></i
+              ></label>
+            </div>
+            <div class="row p-2">
+              <div class="col-sm-12 col-lg-6">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Room number*">Room number*</label>
+                    <input
+                      type="text"
+                      class="rounded-pill border w-100 p-1 ps-3"
+                      placeholder="room number"
+                    />
+                  </div>
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Room floor*">Room floor*</label>
+                    <input
+                      type="text"
+                      class="rounded-pill border w-100 p-1 ps-3"
+                      placeholder="room floor number"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Room capacity*">Room capacity*</label>
+                    <input
+                      type="text"
+                      class="rounded-pill border w-100 p-1 ps-3"
+                      placeholder="2-4 guests"
+                    />
+                  </div>
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Room price per night *"
+                      >Room price per night *</label
+                    >
+                    <input
+                      type="text"
+                      class="rounded-pill border w-100 p-1 ps-3"
+                      placeholder="$ price"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Reservation status *"
+                      >Reservation status *</label
+                    >
+                    <select
+                      class="form-select rounded-pill border w-100 p-1 ps-3"
+                    >
+                      <option selected>Vacant</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Bed type *">Bed type *</label>
+                    <select
+                      class="form-select rounded-pill border w-100 p-1 ps-3"
+                    >
+                      <option selected>Deluxe</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Room type *">Room type *</label>
+                    <select
+                      class="form-select rounded-pill border w-100 p-1 ps-3"
+                    >
+                      <option selected>King size</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                  <div class="col-sm-12 col-lg-6 pb-3">
+                    <label for="Room size">Room size</label>
+                    <input
+                      type="text"
+                      class="rounded-pill border w-100 p-1 ps-3"
+                      placeholder="square footage"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <label for="Room description *">Room description *</label>
+                  <textarea class="w-100 rounded-3"></textarea>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row p-2">
+              <label for="Amenities" class="fw-bold fs-5"
+                >Amenities
+                <i
+                  class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+                ></i
+              ></label>
+            </div>
+            <div class="row ms-3">
+              <div class="col-sm-12 col-lg-6 p-0">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Pet-friendly</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Smoking</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Wi-Fi</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Shower</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Sofa box</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Refrigerator</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6 p-0">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Mini-bar</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Coffee maker</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">City view</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Air conditioner</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">TV Cable</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" />
+                    <span class="text-amenities">Sea view</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <label for="Amenities" class="fw-bold fs-5"
+                >Accessibility Features
+                <i
+                  class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+                ></i
+              ></label>
+            </div>
+            <div class="row p-3">
+              <div class="col-12 col-lg-4 p-0 pb-3">
+                <input type="radio" class="form-check-input" />
+                <span class="text-amenities">Wheelchair accessible</span>
+              </div>
+              <div class="col-12 col-lg-4 p-0 pb-3">
+                <input type="radio" class="form-check-input" />
+                <span class="text-amenities">Shower grab bars</span>
+              </div>
+              <div class="col-12 col-lg-4 p-0 pb-3">
+                <input type="radio" class="form-check-input" />
+                <span class="text-amenities">Hearing aid compatible</span>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-8 col-lg-2">
+                <button class="btn btn-save w-100 text-center">
+                  <p class="m-0 text-white">Save Changes</p>
+                </button>
+              </div>
+              <div class="col-4 col-lg-1 text-center">
+                <button class="btn border border-black btn-cancel w-100">
+                  <p class="m-0 text-black">Cancel</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
