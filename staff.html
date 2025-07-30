@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>House keeping</title>
+    <title>staff</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -16,7 +16,7 @@
       src="https://kit.fontawesome.com/b9112cd231.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="house-keeping.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="row m-0">
@@ -156,152 +156,32 @@
           </div>
         </nav>
         <hr class="m-0" />
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="tabCanvas">
-          <div class="offcanvas-header">
-            <h5 class="w-100 text-center mt-3 mb-3">
-              <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
-              <span class="fs-3">Hotel System</span>
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-house-door-fill fs-5 me-2"></i
-              ><span class="fs-6">Home</span>
-            </button>
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
-              <span class="fs-6">Bookings</span>
-            </button>
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-calendar fs-5 me-2"></i
-              ><span class="fs-6">Calendar</span>
-            </button>
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-hospital fs-5 me-2"></i>
-              <span class="fs-6"
-                ><a href="./index.html" class="text-decoration-none text-black"
-                  >Rooms</a
-                ></span
-              >
-            </button>
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-person-fill fs-5 me-2"></i
-              ><span class="fs-6">Guests</span>
-            </button>
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-droplet fs-5 me-2"></i
-              ><span class="fs-6">House keeping</span>
-            </button>
-            <button
-              class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-            >
-              <i class="bi bi-people fs-5 me-2"></i
-              ><span class="fs-6">Staff</span>
-            </button>
-            <hr class="m-0 mb-2" />
-            <button
-              class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4"
-            >
-              <i class="bi bi-gear fs-5 me-2"></i
-              ><span class="fs-6">Settings</span>
-            </button>
-          </div>
-        </div>
-        <div class="div-main p-3">
-          <h3>House keeping</h3>
+        <div class="div-rooms ps-3 pe-3 pt-3">
+          <h3>Staff</h3>
+
           <div
-            class="div-schedule-mobile d-flex ms-auto d-block d-lg-none w-100"
+            class="div-addrooms-mobile d-flex ms-auto d-block d-lg-none w-100"
           >
             <div>
               <button class="btn rounded-pill bg-warning text-white p-1">
                 <p class="m-0">
                   <a href="" class="text-white text-decoration-none"
-                    >+ Add new schedule</a
+                    >+ Add a new staff</a
                   >
-                </p>
-              </button>
-            </div>
-            <div class="d-flex ms-auto">
-              <button class="btn rounded-pill border-black p-1">
-                <p class="m-0">
-                  <i class="bi bi-search"></i> <span>Search</span>
-                </p>
-              </button>
-              <button class="btn rounded-pill border-black ms-2 p-1">
-                <p class="m-0">
-                  <i class="bi bi-funnel-fill"></i> <span>Filter</span>
                 </p>
               </button>
             </div>
           </div>
           <hr class="d-block d-lg-none m-0 mt-3 mb-2" />
-          <div class="text-tab-mobile d-flex w-100">
-            <div class="d-block d-lg-none">
-              <button
-                class="text-center p-1 m-0 border-0 rounded-pill btn-active"
-              >
-                <h6 class="m-0">All Schedules (496)</h6>
-              </button>
-            </div>
-            <div class="d-block d-lg-none">
-              <button
-                class="text-center p-1 m-0 me-2 ms-2 border-0 bg-white rounded-pill"
-              >
-                <h6 class="m-0">In Progress (293)</h6>
-              </button>
-            </div>
-            <div class="d-block d-lg-none">
-              <button
-                class="text-center p-1 m-0 border-0 bg-white rounded-pill"
-              >
-                <h6 class="m-0">Pending (62)</h6>
-              </button>
-            </div>
-          </div>
           <div class="d-flex mb-2">
-            <div class="text-tab d-flex">
-              <div class="d-none d-lg-block">
-                <button class="text-center p-2 border-0 bg-white">
-                  <h6>All Schedules (496)</h6>
-                </button>
-                <hr class="m-0" />
-              </div>
-              <div class="d-none d-lg-block">
-                <button class="text-center p-2 border-0 bg-white">
-                  <h6>In Progress (293)</h6>
-                </button>
-              </div>
-              <div class="d-none d-lg-block">
-                <button class="text-center p-2 border-0 bg-white">
-                  <h6>Pending (62)</h6>
-                </button>
-              </div>
-            </div>
             <div class="d-flex ms-auto d-none d-lg-block">
               <button class="btn rounded-pill border-black me-2 pt-1 pb-1">
                 <i class="bi bi-funnel-fill"></i> <span>Filter</span>
               </button>
               <button class="btn rounded-pill bg-warning text-white pt-1 pb-1">
                 <a href="" class="text-white text-decoration-none"
-                  >+ Add new schedule
-                </a>
+                  >+ Add a new staff</a
+                >
               </button>
             </div>
           </div>
@@ -320,51 +200,32 @@
                   </div>
                   <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Type:</p>
-                    <p class="m-0">Deluxe</p>
+                    <p class="m-0">Support Staff</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Chores:</p>
-                    <p class="m-0">
-                      Make beds: Change sheets and pillowcases, fluff pillows,
-                      straighten blankets.
-                    </p>
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Staff assigned:</p>
-                    <p class="m-0"><i class="bi bi-person"></i> John Doe</p>
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
                   </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Start date:</p>
-                    <p class="m-0">10/12/2023 10.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">End date:</p>
-                    <p class="m-0">10/12/2023 16.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
+                  <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Status:</p>
                     <p class="m-0">
-                      <span class="badge bg-warning">In Progress</span>
+                      <span class="badge bg-success">Vacant</span>
                     </p>
                   </div>
                 </div>
@@ -391,44 +252,25 @@
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Chores:</p>
-                    <p class="m-0">
-                      Make beds: Change sheets and pillowcases, fluff pillows,
-                      straighten blankets.
-                    </p>
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Staff assigned:</p>
-                    <p class="m-0"><i class="bi bi-person"></i> John Doe</p>
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
                   </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Start date:</p>
-                    <p class="m-0">10/12/2023 10.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">End date:</p>
-                    <p class="m-0">10/12/2023 16.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
+                  <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Status:</p>
                     <p class="m-0">
-                      <span class="badge bg-warning">In Progress</span>
+                      <span class="badge bg-success">Vacant</span>
                     </p>
                   </div>
                 </div>
@@ -455,44 +297,25 @@
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Chores:</p>
-                    <p class="m-0">
-                      Make beds: Change sheets and pillowcases, fluff pillows,
-                      straighten blankets.
-                    </p>
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Staff assigned:</p>
-                    <p class="m-0"><i class="bi bi-person"></i> John Doe</p>
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
                   </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Start date:</p>
-                    <p class="m-0">10/12/2023 10.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">End date:</p>
-                    <p class="m-0">10/12/2023 16.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
+                  <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Status:</p>
                     <p class="m-0">
-                      <span class="badge bg-warning">In Progress</span>
+                      <span class="badge bg-success">Vacant</span>
                     </p>
                   </div>
                 </div>
@@ -519,44 +342,25 @@
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Chores:</p>
-                    <p class="m-0">
-                      Make beds: Change sheets and pillowcases, fluff pillows,
-                      straighten blankets.
-                    </p>
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Staff assigned:</p>
-                    <p class="m-0"><i class="bi bi-person"></i> John Doe</p>
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
                   </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Start date:</p>
-                    <p class="m-0">10/12/2023 10.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">End date:</p>
-                    <p class="m-0">10/12/2023 16.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
+                  <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Status:</p>
                     <p class="m-0">
-                      <span class="badge bg-warning">In Progress</span>
+                      <span class="badge bg-success">Vacant</span>
                     </p>
                   </div>
                 </div>
@@ -583,44 +387,25 @@
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Chores:</p>
-                    <p class="m-0">
-                      Make beds: Change sheets and pillowcases, fluff pillows,
-                      straighten blankets.
-                    </p>
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Staff assigned:</p>
-                    <p class="m-0"><i class="bi bi-person"></i> John Doe</p>
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
                   </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Start date:</p>
-                    <p class="m-0">10/12/2023 10.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">End date:</p>
-                    <p class="m-0">10/12/2023 16.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
+                  <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Status:</p>
                     <p class="m-0">
-                      <span class="badge bg-warning">In Progress</span>
+                      <span class="badge bg-success">Vacant</span>
                     </p>
                   </div>
                 </div>
@@ -647,44 +432,25 @@
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Chores:</p>
-                    <p class="m-0">
-                      Make beds: Change sheets and pillowcases, fluff pillows,
-                      straighten blankets.
-                    </p>
+                    <p class="fw-bold pe-1 m-0">Price:</p>
+                    <p class="m-0">$170/night</p>
+                  </div>
+                  <div class="d-flex ms-auto">
+                    <p class="fw-bold pe-1 m-0">Bed type:</p>
+                    <p class="m-0">Queen size</p>
                   </div>
                 </div>
               </div>
               <div class="card-body d-flex w-100 p-2">
                 <div class="d-flex w-100">
                   <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Staff assigned:</p>
-                    <p class="m-0"><i class="bi bi-person"></i> John Doe</p>
+                    <p class="fw-bold pe-1 m-0">Capacity:</p>
+                    <p class="m-0">4 guests</p>
                   </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">Start date:</p>
-                    <p class="m-0">10/12/2023 10.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
-                    <p class="fw-bold pe-1 m-0">End date:</p>
-                    <p class="m-0">10/12/2023 16.00AM</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body d-flex w-100 p-2">
-                <div class="d-flex w-100">
-                  <div class="d-flex">
+                  <div class="d-flex ms-auto">
                     <p class="fw-bold pe-1 m-0">Status:</p>
                     <p class="m-0">
-                      <span class="badge bg-warning">In Progress</span>
+                      <span class="badge bg-success">Vacant</span>
                     </p>
                   </div>
                 </div>
@@ -717,10 +483,10 @@
             </div>
           </div>
           <div
-            class="div-allrooms border border-1 rounded-4 p-0 pt-3 pe-4 ps-4 pb-0 mb-3 d-none d-lg-block"
+            class="div-staff border border-1 rounded-4 p-0 pt-3 pe-4 ps-4 pb-0 mb-3 d-none d-lg-block"
           >
             <div class="d-flex">
-              <h6 class="m-0 d-none d-lg-block">Cleaning schedule</h6>
+              <h6 class="m-0 d-none d-lg-block">All staff</h6>
               <div class="input-group ms-auto" style="width: 400px">
                 <span
                   class="input-group-text rounded-start-pill d-none d-lg-block"
@@ -731,7 +497,7 @@
                   type="text"
                   class="form-control rounded-end-pill d-none d-lg-block"
                   style="font-size: 10px"
-                  placeholder="Search schedule..."
+                  placeholder="Tìm kiếm..."
                 />
               </div>
             </div>
@@ -741,40 +507,27 @@
                   <th scope="col">
                     <input type="radio" name="room-no" />
                   </th>
-                  <th scope="col">Room No</th>
-                  <th scope="col">Room Type</th>
-                  <th scope="col">Chores</th>
-                  <th scope="col">Staff assigned</th>
-                  <th scope="col">Start date</th>
-                  <th scope="col">End date</th>
-                  <th scope="col">Status</th>
+                  <th scope="col">Staff No</th>
+                  <th scope="col">Staff Type</th>
+                  <th scope="col">Phone Number</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Place</th>
+                  <th scope="col">Date Of Birth</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>
               <tbody class="body-table">
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>231</td>
-                  <td>Deluxe</td>
-                  <td>
-                    Make beds: Change sheets and pillowcases, fluff pillows,
-                    straighten blankets.
-                  </td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>101</td>
+                  <td>Support Staff</td>
+                  <td>0354664738</td>
+                  <td>alice.nguyen@example.com</td>
+                  <td>Hanoi</td>
+                  <td>1992-03-21</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -785,11 +538,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -798,26 +547,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>122</td>
-                  <td>Single</td>
-                  <td>
-                    Empty trash bins: Replace liners and dispose of waste.
-                  </td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>102</td>
+                  <td>Operational Staff</td>
+                  <td>0354664738</td>
+                  <td>minh.tran@example.com</td>
+                  <td>Da Nang</td>
+                  <td>1995-07-10</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -828,11 +566,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -841,27 +575,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>2221</td>
-                  <td>Suite</td>
-                  <td>
-                    Wipe down countertops, tables, chairs, light switches,
-                    doorknobs, bathroom fixtures.
-                  </td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>103</td>
+                  <td>Managerial Staff</td>
+                  <td>0354664738</td>
+                  <td>le.hoa@example.com</td>
+                  <td>Ho Chi Minh</td>
+                  <td>1987-11-02</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -872,11 +594,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -885,24 +603,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>997</td>
-                  <td>Single</td>
-                  <td>Vacuum floors and carpets: Remove dust and debris.</td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>104</td>
+                  <td>Housekeeping</td>
+                  <td>0354664738</td>
+                  <td>hanh.pham@example.com</td>
+                  <td>Nha Trang</td>
+                  <td>1993-04-12</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -913,11 +622,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -926,27 +631,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>75</td>
-                  <td>Suite</td>
-                  <td>
-                    Restock amenities: Toilet paper, tissues, soap, shampoo,
-                    conditioner, towels
-                  </td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>105</td>
+                  <td>Front Office</td>
+                  <td>0354664738</td>
+                  <td>tuan.vo@example.com</td>
+                  <td>Hue</td>
+                  <td>1994-01-18</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -957,54 +650,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>43</td>
-                  <td>Deluxe</td>
-                  <td>
-                    Replenish coffee and tea supplies: Coffee pods, tea bags,
-                    sugar, cream.
-                  </td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
-                  <td>
-                    <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-light"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="bi bi-three-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -1013,24 +659,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>3</td>
-                  <td>Deluxe</td>
-                  <td>Dust furniture and electronics.</td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>106</td>
+                  <td>Executive</td>
+                  <td>0354664738</td>
+                  <td>ngoc.ha@example.com</td>
+                  <td>Can Tho</td>
+                  <td>1980-09-09</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -1041,11 +678,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -1054,24 +687,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>90</td>
-                  <td>Suite</td>
-                  <td>Wash dishes and clean kitchenette.</td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-warning">In Progress</span>
-                  </td>
+                  <td>107</td>
+                  <td>Intern</td>
+                  <td>0354664738</td>
+                  <td>thanh.lam@example.com</td>
+                  <td>Haiphong</td>
+                  <td>2001-05-27</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -1082,11 +706,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -1095,24 +715,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>504</td>
-                  <td>Single</td>
-                  <td>Clean balconies and patios.</td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-danger">Pending</span>
-                  </td>
+                  <td>108</td>
+                  <td>Security</td>
+                  <td>0354664738</td>
+                  <td>bao.nguyen@example.com</td>
+                  <td>Vung Tau</td>
+                  <td>1988-06-01</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -1123,11 +734,7 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
@@ -1136,24 +743,15 @@
 
                 <tr>
                   <th scope="row"><input type="radio" name="room-no" /></th>
-                  <td>701</td>
-                  <td>Deluxe</td>
-                  <td>Replenish pool towels and amenities.</td>
-                  <td>
-                    <p><i class="bi bi-person"></i> John Doe</p>
-                  </td>
-                  <td>10/12/2023 10.00AM</td>
-                  <td>
-                    <span>10/12/2023 16.00PM</span>
-                  </td>
-                  <td>
-                    <span class="badge bg-danger">Pending</span>
-                  </td>
+                  <td>109</td>
+                  <td>Engineering</td>
+                  <td>0354664738</td>
+                  <td>cuong.le@example.com</td>
+                  <td>Quy Nhon</td>
+                  <td>1991-02-19</td>
                   <td>
                     <div class="d-flex">
-                      <button class="btn">
-                        <i class="bi bi-eye"></i>
-                      </button>
+                      <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
                         <button
                           class="btn btn-light"
@@ -1164,11 +762,35 @@
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="./editroom.html"
-                              >Edit room</a
-                            >
-                          </li>
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>110</td>
+                  <td>IT Support</td>
+                  <td>0354664738</td>
+                  <td>dat.tran@example.com</td>
+                  <td>Bien Hoa</td>
+                  <td>1996-12-30</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-light"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
                         </ul>
                       </div>
                     </div>
