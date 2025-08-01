@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>admin</title>
+    <title>Guests</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -16,98 +16,115 @@
       src="https://kit.fontawesome.com/b9112cd231.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="guests.css" />
   </head>
   <body>
     <div class="row m-0">
       <div
-        class="col-tabcontrol d-none d-lg-block col-0 col-lg-2 pt-3 pe-1 ps-1"
+        class="col-tabcontrol d-none d-lg-block col-0 col-lg-2 pt-3 pe-1 ps-1 min-vh-100"
       >
-        <h5 class="w-100 text-center mt-3 mb-3">
-          <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
-          <span class="fs-3">Hotel System</span>
-        </h5>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-house-door-fill fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a href="home.html" class="text-decoration-none text-black"
-              >Home</a
-            ></span
-          >
-        </button>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
-          <span class="fs-6"
-            ><a href="booking.html" class="text-decoration-none text-black"
-              >Bookings</a
-            ></span
-          >
-        </button>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-calendar fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a href="calendar.html" class="text-decoration-none text-black"
-              >Calendar</a
-            ></span
-          >
-        </button>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-hospital fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a href="./index.html" class="text-decoration-none text-black"
-              >Rooms</a
-            ></span
-          >
-        </button>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-person-fill fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a href="guests.html" class="text-decoration-none text-black"
-              >Guests</a
-            ></span
-          >
-        </button>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-droplet fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a
-              href="./house-keeping.html"
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0">
+            <h5 class="w-100 text-center mt-3 mb-3">
+              <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
+              <span class="fs-3">Hotel System</span>
+            </h5>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="../home.html" class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-house-door-fill fs-5 me-2"></i
+                ><span class="fs-6">Home</span>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../booking/booking.html"
               class="text-decoration-none text-black"
-              >House keeping</a
-            ></span
-          >
-        </button>
-        <button
-          class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
-        >
-          <i class="bi bi-people fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a href="staff.html" class="text-decoration-none text-black"
-              >Staff</a
-            ></span
-          >
-        </button>
-        <hr class="m-0 mb-2" />
-        <button class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4">
-          <i class="bi bi-gear fs-5 me-2"></i
-          ><span class="fs-6"
-            ><a href="settings.html" class="text-decoration-none text-black"
-              >Settings</a
-            ></span
-          >
-        </button>
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
+                <span class="fs-6">Bookings</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../calendar/calendar.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-calendar fs-5 me-2"></i
+                ><span class="fs-6">Calendar</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../rooms/index.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-hospital fs-5 me-2"></i
+                ><span class="fs-6">Rooms</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../guests/guests.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-person-fill fs-5 me-2"></i
+                ><span class="fs-6">Guests</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../house-keeping/house-keeping.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-droplet fs-5 me-2"></i
+                ><span class="fs-6">House keeping</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href="../staff/staff.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-people fs-5 me-2"></i
+                ><span class="fs-6">Staff</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href="../setting/settings.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4"
+              >
+                <i class="bi bi-gear fs-5 me-2"></i
+                ><span class="fs-6">Settings</span>
+              </button></a
+            >
+          </li>
+        </ul>
       </div>
       <div class="col-main col-12 col-lg-10 m-0 p-0">
         <nav class="navbar navbar-expand-lg p-1">
@@ -140,24 +157,109 @@
           </div>
 
           <div class="d-flex ms-auto">
-            <button class="btn rounded-c">
-              <i class="bi bi-bell"></i>
-            </button>
+            <div class="dropdown">
+              <button
+                class="btn rounded-c dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-bell"></i>
+              </button>
+              <ul class="dropdown-menu mt-1">
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <a href="">
+                  <button class="btn w-100 dropdown-bottom text-center">
+                    View More
+                  </button></a
+                >
+              </ul>
+            </div>
+
             <button class="btn rounded-c">
               <i class="bi bi-inbox"></i>
             </button>
-            <button class="btn rounded-c d-flex">
-              <i class="bi bi-person"></i>
-              <p class="m-0 ps-2 d-none d-lg-block" style="font-size: 15px">
-                John Doe
-              </p>
-              <i class="bi bi-chevron-down ps-2 d-none d-lg-block"></i>
-            </button>
+            <div class="dropdown">
+              <button
+                class="btn rounded-c d-flex align-items-center dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person"></i>
+                <p class="m-0 ps-2 d-none d-lg-block" style="font-size: 15px">
+                  John Doe
+                </p>
+              </button>
+              <ul class="dropdown-menu mt-1">
+                <li><a class="dropdown-item" href="#">Info</a></li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                <li><a class="dropdown-item" href="#">Setting</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
         <hr class="m-0" />
-        <div class="div-rooms ps-2 pe-2 pt-2">
-          <h3>Bookings</h3>
+        <div class="div-rooms ps-3 pe-3 pt-3">
+          <h3>Guest</h3>
 
           <div
             class="div-addrooms-mobile d-flex ms-auto d-block d-lg-none w-100"
@@ -165,10 +267,8 @@
             <div>
               <button class="btn rounded-pill bg-warning text-white p-1">
                 <p class="m-0">
-                  <a
-                    href="addrooms.html"
-                    class="text-white text-decoration-none"
-                    >+ Add a new rooms</a
+                  <a href="" class="text-white text-decoration-none"
+                    >+ Add a new guest</a
                   >
                 </p>
               </button>
@@ -184,16 +284,16 @@
                 <a
                   href="./addrooms.html"
                   class="text-white text-decoration-none"
-                  >+ Add a new rooms</a
+                  >+ Add a new guest</a
                 >
               </button>
             </div>
           </div>
           <div
-            class="div-allbookings border border-1 rounded-4 p-0 pt-3 pe-4 ps-4 pb-0 mb-3 d-none d-lg-block"
+            class="div-guest border border-1 rounded-4 p-0 pt-3 pe-4 ps-4 pb-0 mb-3"
           >
             <div class="d-flex">
-              <h6 class="m-0 d-none d-lg-block">All bookings</h6>
+              <h6 class="m-0 d-none d-lg-block">All Guest</h6>
               <div class="input-group ms-auto" style="width: 400px">
                 <span
                   class="input-group-text rounded-start-pill d-none d-lg-block"
@@ -208,34 +308,88 @@
                 />
               </div>
             </div>
-            <table class="table d-none table-hover d-lg-table mt-3">
+            <table class="table table-hover d-none d-lg-table table-rooms mt-3">
               <thead>
                 <tr class="table-secondary">
                   <th scope="col">
-                    <input type="radio" name="booking-select" />
+                    <input type="radio" name="room-no" />
                   </th>
-                  <th scope="col">Booking ID</th>
-                  <th scope="col">Guest Name</th>
-                  <th scope="col">Room No</th>
-                  <th scope="col">Room Type</th>
-                  <th scope="col">Check-in</th>
-                  <th scope="col">Check-out</th>
-                  <th scope="col">Status</th>
+                  <th scope="col">Guest No</th>
+                  <th scope="col">Guest Type</th>
+                  <th scope="col">Phone Number</th>
+                  <th scope="col">Date Of Birth</th>
+                  <th scope="col">Check-in Date</th>
+                  <th scope="col">Check-out Date</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>
               <tbody class="body-table">
                 <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B001</td>
-                  <td>Nguyen Van A</td>
-                  <td>101</td>
-                  <td>Deluxe</td>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G001</td>
+                  <td>Deluxe Room</td>
+                  <td>033746294</td>
+                  <td>1992-05-18</td>
+                  <td>2025-07-30</td>
+                  <td>2025-08-02</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-light"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G002</td>
+                  <td>Standard Room</td>
+                  <td>0398234567</td>
+                  <td>1988-11-03</td>
+                  <td>2025-07-28</td>
+                  <td>2025-07-30</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-light"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G003</td>
+                  <td>Suite</td>
+                  <td>0912345678</td>
+                  <td>1995-02-14</td>
                   <td>2025-08-01</td>
                   <td>2025-08-05</td>
-                  <td><span class="badge bg-success">Confirmed</span></td>
                   <td>
                     <div class="d-flex">
                       <button class="btn"><i class="bi bi-eye"></i></button>
@@ -250,7 +404,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
                       </div>
                     </div>
@@ -258,50 +412,13 @@
                 </tr>
 
                 <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B002</td>
-                  <td>Tran Thi B</td>
-                  <td>203</td>
-                  <td>Suite</td>
-                  <td>2025-08-03</td>
-                  <td>2025-08-08</td>
-                  <td>
-                    <span class="badge bg-warning text-dark">Pending</span>
-                  </td>
-                  <td>
-                    <div class="d-flex">
-                      <button class="btn"><i class="bi bi-eye"></i></button>
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-light"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="bi bi-three-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B003</td>
-                  <td>Le Minh C</td>
-                  <td>310</td>
-                  <td>Standard</td>
-                  <td>2025-07-28</td>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G004</td>
+                  <td>Single Room</td>
+                  <td>0845567890</td>
+                  <td>1990-07-22</td>
+                  <td>2025-07-29</td>
                   <td>2025-08-01</td>
-                  <td><span class="badge bg-primary">Checked-in</span></td>
                   <td>
                     <div class="d-flex">
                       <button class="btn"><i class="bi bi-eye"></i></button>
@@ -316,7 +433,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
                       </div>
                     </div>
@@ -324,16 +441,13 @@
                 </tr>
 
                 <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B004</td>
-                  <td>Pham D</td>
-                  <td>105</td>
-                  <td>Presidential</td>
-                  <td>2025-08-10</td>
-                  <td>2025-08-15</td>
-                  <td><span class="badge bg-danger">Cancelled</span></td>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G005</td>
+                  <td>Double Room</td>
+                  <td>0909123456</td>
+                  <td>1985-04-08</td>
+                  <td>2025-07-31</td>
+                  <td>2025-08-03</td>
                   <td>
                     <div class="d-flex">
                       <button class="btn"><i class="bi bi-eye"></i></button>
@@ -348,6 +462,7 @@
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
                       </div>
                     </div>
@@ -355,49 +470,14 @@
                 </tr>
 
                 <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B005</td>
-                  <td>Nguyen Thi E</td>
-                  <td>405</td>
-                  <td>Standard</td>
-                  <td>2025-08-04</td>
-                  <td>2025-08-07</td>
-                  <td><span class="badge bg-success">Confirmed</span></td>
-                  <td>
-                    <div class="d-flex">
-                      <button class="btn"><i class="bi bi-eye"></i></button>
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-light"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                        >
-                          <i class="bi bi-three-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B006</td>
-                  <td>Tran Van F</td>
-                  <td>208</td>
-                  <td>Suite</td>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G006</td>
+                  <td>Family Room</td>
+                  <td>0988991122</td>
+                  <td>1979-09-10</td>
                   <td>2025-08-02</td>
                   <td>2025-08-06</td>
                   <td>
-                    <span class="badge bg-warning text-dark">Pending</span>
-                  </td>
-                  <td>
                     <div class="d-flex">
                       <button class="btn"><i class="bi bi-eye"></i></button>
                       <div class="dropdown">
@@ -405,87 +485,27 @@
                           class="btn btn-light"
                           type="button"
                           data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
                       </div>
                     </div>
                   </td>
                 </tr>
+
                 <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B007</td>
-                  <td>Le Thi G</td>
-                  <td>301</td>
-                  <td>Deluxe</td>
-                  <td>2025-08-05</td>
-                  <td>2025-08-10</td>
-                  <td><span class="badge bg-primary">Checked-in</span></td>
-                  <td>
-                    <div class="d-flex">
-                      <button class="btn"><i class="bi bi-eye"></i></button>
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-light"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                        >
-                          <i class="bi bi-three-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B008</td>
-                  <td>Pham Van H</td>
-                  <td>212</td>
-                  <td>Standard</td>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G007</td>
+                  <td>Standard Room</td>
+                  <td>0967123987</td>
+                  <td>2000-12-01</td>
                   <td>2025-08-03</td>
-                  <td>2025-08-06</td>
-                  <td><span class="badge bg-danger">Cancelled</span></td>
-                  <td>
-                    <div class="d-flex">
-                      <button class="btn"><i class="bi bi-eye"></i></button>
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-light"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                        >
-                          <i class="bi bi-three-dots"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Edit</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B009</td>
-                  <td>Do Thi I</td>
-                  <td>110</td>
-                  <td>Suite</td>
                   <td>2025-08-07</td>
-                  <td>2025-08-09</td>
-                  <td><span class="badge bg-secondary">Checked-out</span></td>
                   <td>
                     <div class="d-flex">
                       <button class="btn"><i class="bi bi-eye"></i></button>
@@ -494,27 +514,27 @@
                           class="btn btn-light"
                           type="button"
                           data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
                       </div>
                     </div>
                   </td>
                 </tr>
+
                 <tr>
-                  <th scope="row">
-                    <input type="radio" name="booking-select" />
-                  </th>
-                  <td>#B010</td>
-                  <td>Nguyen Van K</td>
-                  <td>409</td>
-                  <td>Presidential</td>
-                  <td>2025-08-12</td>
-                  <td>2025-08-18</td>
-                  <td><span class="badge bg-success">Confirmed</span></td>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G008</td>
+                  <td>Suite</td>
+                  <td>0855551122</td>
+                  <td>1993-03-17</td>
+                  <td>2025-07-27</td>
+                  <td>2025-07-31</td>
                   <td>
                     <div class="d-flex">
                       <button class="btn"><i class="bi bi-eye"></i></button>
@@ -523,12 +543,71 @@
                           class="btn btn-light"
                           type="button"
                           data-bs-toggle="dropdown"
+                          aria-expanded="false"
                         >
                           <i class="bi bi-three-dots"></i>
                         </button>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Edit</a></li>
-                          <li><a class="dropdown-item" href="#">Cancel</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G009</td>
+                  <td>Deluxe Room</td>
+                  <td>0911002200</td>
+                  <td>1980-06-06</td>
+                  <td>2025-08-04</td>
+                  <td>2025-08-08</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-light"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row"><input type="radio" name="room-no" /></th>
+                  <td>G010</td>
+                  <td>Single Room</td>
+                  <td>0977778888</td>
+                  <td>1999-10-25</td>
+                  <td>2025-08-01</td>
+                  <td>2025-08-04</td>
+                  <td>
+                    <div class="d-flex">
+                      <button class="btn"><i class="bi bi-eye"></i></button>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-light"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-three-dots"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Edit</a></li>
+                          <li><a class="dropdown-item" href="#">Delete</a></li>
                         </ul>
                       </div>
                     </div>

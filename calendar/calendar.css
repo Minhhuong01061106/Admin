@@ -8,23 +8,26 @@
 .col-tabcontrol {
   background-color: rgb(239, 240, 240);
 }
+.list-group-item {
+  background-color: rgb(239, 240, 240);
+}
 .offcanvas {
   background-color: rgb(239, 240, 240);
 }
-.div-main > #div-alert {
+.div-rooms > #div-alert {
   background-color: rgb(249, 238, 238);
 }
 .text-tab > div > button > h6 {
   color: rgb(253, 122, 75);
 }
-.table-main > * {
+.table-rooms > * {
   font-size: 15px;
 }
 
 .text-tab-mobile > div > button > * {
   font-size: 10px;
 }
-.div-schedule-mobile > div > button {
+.div-addrooms-mobile > div > button {
   font-size: 10px;
 }
 .btn-active {
@@ -39,13 +42,10 @@
 .btn-details {
   width: 130px;
 }
-.body-table > * {
-  font-size: 13px;
-}
 
-.body-table > tr > td {
-  max-width: 200px;
+thead > tr > th {
+  padding: 25px;
 }
-.table > thead > tr > th {
-  font-size: 13px;
+.body-table td {
+  border: 1px solid rgb(189, 187, 187);
 }
