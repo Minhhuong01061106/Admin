@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Guest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b9112cd231.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="add-guest.css" />
+  </head>
+  <body>
+    <div class="row m-0">
+      <div
+        class="col-tabcontrol d-none d-lg-block col-0 col-lg-2 pt-3 pe-1 ps-1 min-vh-100"
+      >
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item border-0">
+            <h5 class="w-100 text-center mt-3 mb-3">
+              <i class="fa-solid fa-bed pe-1 text-warning fs-3"></i>
+              <span class="fs-3">Hotel System</span>
+            </h5>
+          </li>
+          <li class="list-group-item border-0">
+            <a href="../home.html" class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-house-door-fill fs-5 me-2"></i
+                ><span class="fs-6">Home</span>
+              </button>
+            </a>
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../booking/booking.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-box-arrow-down fs-5 pe-2"></i>
+                <span class="fs-6">Bookings</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../calendar/calendar.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-calendar fs-5 me-2"></i
+                ><span class="fs-6">Calendar</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../rooms/index.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-hospital fs-5 me-2"></i
+                ><span class="fs-6">Rooms</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../guests/guests.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-person-fill fs-5 me-2"></i
+                ><span class="fs-6">Guests</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item border-0">
+            <a
+              href="../house-keeping/house-keeping.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-droplet fs-5 me-2"></i
+                ><span class="fs-6">House keeping</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href="../staff/staff.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill mb-2 pe-4 ps-4"
+              >
+                <i class="bi bi-people fs-5 me-2"></i
+                ><span class="fs-6">Staff</span>
+              </button></a
+            >
+          </li>
+          <li class="list-group-item">
+            <a
+              href="../setting/settings.html"
+              class="text-decoration-none text-black"
+              ><button
+                class="btn w-100 text-start border-0 rounded-pill pe-4 ps-4"
+              >
+                <i class="bi bi-gear fs-5 me-2"></i
+                ><span class="fs-6">Settings</span>
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-main col-12 col-lg-10 m-0 p-0">
+        <nav class="navbar navbar-expand-lg p-1">
+          <div class="d-flex">
+            <button
+              class="btn d-block d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#tabCanvas"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <button class="btn rounded-c d-block d-lg-none">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <div class="input-group d-none d-lg-flex w-50">
+            <span
+              class="input-group-text rounded-start-pill d-none d-lg-block"
+              style="font-size: 10px"
+              ><i class="bi bi-search"></i
+            ></span>
+            <input
+              type="text"
+              class="form-control rounded-end-pill d-none d-lg-block"
+              style="font-size: 10px"
+              placeholder="Tìm kiếm..."
+            />
+          </div>
+
+          <div class="d-flex ms-auto">
+            <div class="dropdown">
+              <button
+                class="btn rounded-c dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-bell"></i>
+              </button>
+              <ul class="dropdown-menu mt-1">
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <li>
+                  <a href="">
+                    <button class="btn p-0 p-1 w-100">
+                      <div
+                        class="alert alert-primary text-start m-0"
+                        role="alert"
+                      >
+                        A simple primary
+                      </div>
+                    </button></a
+                  >
+                </li>
+                <a href="../more-announcement/more-announcement.html">
+                  <button class="btn w-100 dropdown-bottom text-center">
+                    View More
+                  </button></a
+                >
+              </ul>
+            </div>
+
+            <button class="btn rounded-c">
+              <i class="bi bi-inbox"></i>
+            </button>
+            <div class="dropdown">
+              <button
+                class="btn rounded-c d-flex align-items-center dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person"></i>
+                <p class="m-0 ps-2 d-none d-lg-block" style="font-size: 15px">
+                  John Doe
+                </p>
+              </button>
+              <ul class="dropdown-menu mt-1">
+                <li><a class="dropdown-item" href="#">Info</a></li>
+                <li><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <hr class="m-0" />
+        <div class="p-3">
+          <h3>Add Guest</h3>
+          <div class="p-3 pt-2 border rounded-4">
+            <span class="fs-5 fw-bold">Guest Info</span>
+            <i
+              class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+            ></i>
+
+            <div class="row mt-1">
+              <div class="col-sm-12 col-md-3">
+                <label for="Name">Name: </label>
+                <input type="text" class="rounded-pill w-100" />
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <label for="Name">Phone number: </label>
+                <input type="text" class="rounded-pill w-100" />
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <label for="Name">Email Address: </label>
+                <input type="text" class="rounded-pill w-100" />
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <label for="Name">Birthday: </label>
+                <input type="text" class="rounded-pill w-100" />
+              </div>
+            </div>
+            <hr />
+            <span class="fs-5 fw-bold">Room Type</span>
+            <i
+              class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+            ></i>
+            <div class="row ms-3 mt-1">
+              <div class="col-sm-12 col-lg-6 p-0">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" name="type" />
+                    <span class="text-amenities"> Deluxe</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" name="type" />
+                    <span class="text-amenities">Standard</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" name="type" />
+                    <span class="text-amenities"> Presidential</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-6 p-0">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" name="type" />
+                    <span class="text-amenities"> Suite</span>
+                  </div>
+                  <div class="col-4 col-sm-4 col-lg-4 p-0 pb-3">
+                    <input type="radio" class="form-check-input" name="type" />
+                    <span class="text-amenities">Single</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <span class="fs-5 fw-bold">Date</span>
+            <i
+              class="bi bi-question-circle-fill ms-2 rounded-circle pe-2 ps-2 pt-1 pb-1 icon-label"
+            ></i>
+            <div class="row mt-1">
+              <div class="col-sm-12 col-md-3">
+                <label for="Name">Check In Date: </label>
+                <input type="text" class="rounded-pill w-100" />
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <label for="Name">Check Out Date: </label>
+                <input type="text" class="rounded-pill w-100" />
+              </div>
+              </div>
+            </div>
+            <div class="d-flex w-100">
+              <button class="btn ms-auto btn-primary">+ Add Guest</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
