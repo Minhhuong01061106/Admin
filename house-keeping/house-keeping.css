@@ -52,3 +52,6 @@
 .table > thead > tr > th {
   font-size: 13px;
 }
+.dropdown-bell {
+  width: 300px;
+}

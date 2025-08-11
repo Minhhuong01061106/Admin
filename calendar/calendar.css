@@ -44,8 +44,18 @@
 }
 
 thead > tr > th {
-  padding: 25px;
+  width: 14.28%;
+  height: 90px;
 }
 .body-table td {
   border: 1px solid rgb(189, 187, 187);
+}
+.dropdown-bell {
+  width: 300px;
+}
+.body-table > tr > td {
+  height: 110px;
+}
+.body-table > tr > td > button {
+  height: 100%;
 }

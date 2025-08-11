@@ -41,3 +41,6 @@ input[type="radio"].form-check-input {
 .btn-save {
   background-color: rgb(186, 79, 79);
 }
+.dropdown-bell {
+  width: 300px;
+}
