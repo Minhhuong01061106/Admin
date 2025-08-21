@@ -1,0 +1,9 @@
+.login-form {
+  background-color: rgb(242, 242, 242);
+}
+.login-form > div {
+  width: 500px;
+}
+.login-form > div > * {
+  width: 300px;
+}
